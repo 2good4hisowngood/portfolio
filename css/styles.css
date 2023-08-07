@@ -23,8 +23,9 @@
 
 /* Adjusting the project info container */
 .project-info {
-    min-height: 400px; /* Adjust this value based on your text content */
+    /*min-height: 400px; /* Adjust this value based on your text content */
     overflow: auto; /* Adds a scrollbar if the content overflows */
+    height: auto; /* Allow the container to grow with the content */
 }
 
 /* Media Queries for responsiveness, if necessary */
@@ -35,11 +36,11 @@
 .project-info {
     padding: 15px; /* Adjust as needed */
     height: auto; /* Allow the container to grow with the content */
-    min-height: 300px; /* Set a minimum height as required */
+    /*min-height: 300px; /* Set a minimum height as required */
 }
 .project-info {
     overflow-y: auto; /* Allows scrolling within the container if content exceeds the height */
-    max-height: 500px; /* Adjust this based on your design preference */
+    /*max-height: 500px; /* Adjust this based on your design preference */
 }
                                                                                                     
 }

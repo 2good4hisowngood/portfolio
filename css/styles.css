@@ -923,25 +923,35 @@ footer {
         gap: 20px;
         justify-content: center;
     }
-    
+
     .certification {
         border: 1px solid #e6e6e6;
-        padding: 20px;
+        padding: 15px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background: white;
+        display: flex;
+        /* Use flex to help center content vertically */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center-align flex items */
     }
-    
+
     .certification img {
         width: auto;
-        height: 120px; /* Adjust the height to make images appear larger */
+        height: 120px;
+        /* Adjust the height to make images appear larger */
     }
-    
+
     .certification p {
-        color: #374054; /* Adjust the color to match the heading */
-        margin-top: 15px;
-        font-size: 0.9em; /* Adjust font size for better readability */
-    }    
+        color: #374054;
+        font-size: 0.9em;
+        margin: 0;
+        /* Remove margin to align text closer to the image */
+        text-align: center;
+        /* Center-align text */
+    }
 
     @media only screen and (max-width: 768px) {
         .certification {
@@ -950,10 +960,10 @@ footer {
         }
     }
 
-    @media only screen and (max-width: 480px) {
-        .certification {
-            flex-basis: 100%;
-            /* Stack the badges on very small screens */
+    @media only screen and (max-width: 768px) {
+        .certification-container {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            /* Adjust grid layout for smaller screens */
         }
     }
 }

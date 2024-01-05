@@ -42,5 +42,51 @@
     overflow-y: auto; /* Allows scrolling within the container if content exceeds the height */
     /*max-height: 500px; /* Adjust this based on your design preference */
 }
-                                                                                                    
+          
+/* Certifications Section */
+#certifications {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
+
+#certifications h2 {
+    color: #374054;
+    margin-bottom: 30px;
+}
+
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certification {
+    margin: 10px;
+    text-align: center;
+}
+
+.certification img {
+    width: 100px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 4px; /* Optional: for rounded corners */
+}
+
+.certification p {
+    color: #74808a;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .certification {
+        flex-basis: 50%; /* Adjust the width of the badges on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .certification {
+        flex-basis: 100%; /* Stack the badges on very small screens */
+    }
+}
+
 }

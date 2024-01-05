@@ -918,28 +918,30 @@ footer {
     }
 
     .certification-container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
         justify-content: center;
     }
-
+    
     .certification {
-        margin: 10px;
-        text-align: center;
+        border: 1px solid #e6e6e6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        background: white;
     }
-
+    
     .certification img {
-        width: 100px;
-        /* Adjust as necessary */
-        height: auto;
-        border-radius: 4px;
-        /* Optional: for rounded corners */
+        width: auto;
+        height: 120px; /* Adjust the height to make images appear larger */
     }
-
+    
     .certification p {
-        color: #74808a;
-        margin-top: 10px;
-    }
+        color: #374054; /* Adjust the color to match the heading */
+        margin-top: 15px;
+        font-size: 0.9em; /* Adjust font size for better readability */
+    }    
 
     @media only screen and (max-width: 768px) {
         .certification {

@@ -904,66 +904,66 @@ footer {
     @media only screen and (max-width: 768px) {
         /* Add specific styles for smaller screens here */
     }
+}
 
-    /* Certifications Section */
-    #certifications {
-        padding: 50px 15px;
-        text-align: center;
-        border-bottom: 1px solid #dcd9d9;
-    }
+/* Certifications Section */
+#certifications {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
 
-    #certifications h2 {
-        color: #374054;
-        margin-bottom: 30px;
-    }
+#certifications h2 {
+    color: #374054;
+    margin-bottom: 30px;
+}
 
-    .certification-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        justify-content: center;
-    }
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
 
+.certification {
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    /* Use flex to help center content vertically */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center-align flex items */
+}
+
+.certification img {
+    width: auto;
+    height: 120px;
+    /* Adjust the height to make images appear larger */
+}
+
+.certification p {
+    color: #374054;
+    font-size: 0.9em;
+    margin: 0;
+    /* Remove margin to align text closer to the image */
+    text-align: center;
+    /* Center-align text */
+}
+
+@media only screen and (max-width: 768px) {
     .certification {
-        border: 1px solid #e6e6e6;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background: white;
-        display: flex;
-        /* Use flex to help center content vertically */
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center-align flex items */
+        flex-basis: 50%;
+        /* Adjust the width of the badges on smaller screens */
     }
+}
 
-    .certification img {
-        width: auto;
-        height: 120px;
-        /* Adjust the height to make images appear larger */
-    }
-
-    .certification p {
-        color: #374054;
-        font-size: 0.9em;
-        margin: 0;
-        /* Remove margin to align text closer to the image */
-        text-align: center;
-        /* Center-align text */
-    }
-
-    @media only screen and (max-width: 768px) {
-        .certification {
-            flex-basis: 50%;
-            /* Adjust the width of the badges on smaller screens */
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .certification-container {
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            /* Adjust grid layout for smaller screens */
-        }
+@media only screen and (max-width: 768px) {
+    .certification-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        /* Adjust grid layout for smaller screens */
     }
 }
